@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Humanity</title>
+  <link rel="stylesheet" type="text/css" href="page.css" />
+  <link rel="stylesheet" type="text/css" href="navbar.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<div class="navigation-bar" id="navigation-bar">
+	  <a class="navigation-bar-element" href="synopsis.html">ABOUT HUMANITY</a>
+	  <a class="navigation-bar-element" href="index.html">CURRENT RELEASES</a>
+	  <a class="navigation-bar-element" href="previews.html">PREVIEWS</a>
+	  <a class="navigation-bar-element" href="shoppingCart.html">SHOPPING CART</a>
+	  <a class="navigation-bar-element" href="orderHistory.html">YOUR ORDER HISTORY</a>
+	</div>
+
+	<div class = "container">
+		<section itemtpe="https://schema.org/Product" itemscope class="product clearfix" role="main id="main">
+			
+			<section class="comicDescription">
+				<div class="comicQuickDetails">
+					<div class="comicHeader">
+						<h1 itemprop="name"> Comic Title Should Go Here - PREVIEW </h1>
+					</div>
+					<div class="comicShortDescription">
+						<p> Comic synopsis would go here. <br>
+							Explaining that particular chapter. </p>
+					</div>
+						
+					<div class="priceBar" itemtype="https://schema.org/Offer" itemscope itemprop= "offers" >
+						<p class="price" itemprop="price">Comic Book Price should go here.</p>
+					</div>
+						
+					<div data-dojo-attach-point="variantSelectorNode" class="variantSelector" id="variantSelector" widgetid="variantSelector">
+					<form action="downloadComic" method="GET" id="downloadButton">
+							<button type="submit">DOWNLOAD</button>
+						</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<div class="viewerMain">
+				<img itemprop="image" src="http://media.beam.usnews.com/41/9f/663c92f84a19bc7ccb5884caebca/161021-robot-editorial.jpg" width= 250 height=250 alt="Computer Hope" />
+			</div>
+		</section>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+@CHARSET "ISO-8859-1";
+
+<!-- Current Releases Webpage -->
+.container {
+	
+	overflow: hidden;
+	
+}
+
+.comicDescription {
+	
+    float: left;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: -110px;
+    border: 1px solid;
+    
+}
+
+.viewerMain {
+
+	border: 1px solid;
+	
+}
+
+.additionButton {
+	
+	display: inline-block;
+	
+}
+
+.container {
+	
+	text-align: center;
+}
+
+<!-- Shopping Cart and Order History Tables -->
+

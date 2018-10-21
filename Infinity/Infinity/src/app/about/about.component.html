@@ -1,0 +1,43 @@
+<div style="background-image: url('https://www.artgalleryframes.com/images_products/mancinelli-matte-black-floater-frame-13818lar.jpg'); background-repeat: no-repeat;
+    background-size: 100% 100%; margin: auto; height: auto; max-height: 100%; width: auto; max-width: 100%;">
+		<p class="about-text" style="color:white; ">
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac neque eget nisi placerat tincidunt at id metus. Ut at est consectetur, placerat orci fermentum, fringilla diam. Suspendisse fermentum elit ornare interdum porta. Pellentesque tempor maximus libero a ornare. Duis a mi placerat, lacinia orci vitae, vulputate nisl. Maecenas pharetra vestibulum orci eget scelerisque. Integer sem eros, cursus a efficitur vitae, condimentum vel tellus. Aenean ut euismod mi.
+	
+	Aliquam cursus neque ac rhoncus condimentum. Aliquam in orci tellus. Aliquam erat volutpat. Curabitur orci felis, ultricies tristique sagittis ac, tempor quis nibh. Nulla ornare arcu augue, et dapibus neque posuere quis. Praesent in mattis tellus. Sed sed ultrices elit.
+	
+	Curabitur faucibus arcu ipsum, eget fermentum sapien convallis a. Nunc facilisis vehicula neque, nec ullamcorper ex facilisis non. In tristique ullamcorper neque nec blandit. Cras tincidunt laoreet feugiat. Pellentesque sed quam urna. Proin id finibus dui. Ut in erat nec ligula blandit laoreet. Curabitur tristique gravida felis, ac tincidunt leo accumsan ut. Nulla suscipit leo quis arcu dapibus egestas. In hac habitasse platea dictumst. Curabitur aliquam commodo dolor, in pharetra erat rutrum nec.
+	
+	Praesent sagittis elit eget ex sagittis, eget lobortis sapien mollis. Nullam bibendum aliquam est, nec varius ex pretium placerat. Suspendisse tortor mi, scelerisque quis velit in, malesuada ultricies libero. Vivamus rutrum bibendum ex eget imperdiet. Donec lacinia lobortis eleifend. Integer tempus hendrerit leo, vel porttitor neque accumsan vel. Phasellus finibus blandit orci, a viverra eros eleifend vitae.
+	
+	Pellentesque at mattis mi, id tempor ex. Aliquam condimentum rutrum elit. Vivamus tristique quam eu lorem feugiat, viverra elementum nunc viverra. Fusce eget lectus rhoncus, cursus nibh quis, cursus dolor. In nec nulla eros. Mauris sodales lorem venenatis dapibus efficitur. Etiam nisi metus, euismod vitae suscipit non, convallis vel arcu. Aliquam in arcu vel dolor dignissim tincidunt. Integer aliquam accumsan mollis. Donec dapibus magna in facilisis dictum. Nulla et porta dolor, in eleifend ex. Nam in convallis est, non porta magna.
+		</p>
+</div>
+
+<div class="buttons">
+	<button type="submit" (click)="onSaveFirebaseComics()">SAVE FIREBASE COMICS (TEST)</button>
+	<button type="submit" (click)="onFetchFirebaseComics()">FETCH FIREBASE COMICS (TEST)</button>
+	<button type="submit" (click)="onSaveFirebasePreviews()">SAVE FIREBASE PREVIEWS (TEST)</button>
+	<button type="submit" (click)="onFetchFirebasePreviews()">FETCH FIREBASE PREVIEWS (TEST)</button>
+	<button type="submit" (click)="addComicToDatabase()">ADD COMIC TO DATABASE (TEST)</button>
+</div>
+
+<h1> COMICS </h1>
+
+<div class="row">
+	<div class="col-xs-12">
+		<app-comics-item
+		 *ngFor="let Comic of comics; let i = index" 
+		 [comic]="Comic"
+		 [index]="i"></app-comics-item>
+	</div>
+</div>
+
+<h1> PREVIEWS </h1>
+
+<div class="row">
+		<div class="col-xs-12">
+			<app-previews-details
+			*ngFor="let Preview of previews; let i = index"
+			[preview]="Preview"></app-previews-details>
+		</div>
+</div>

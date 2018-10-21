@@ -1,0 +1,10 @@
+<a  id="comic" style="cursor: pointer; background-image:url('https://i.pinimg.com/originals/10/18/cd/1018cd88615db2a0295b72b7856452c2.jpg');" [routerLink]="[index]" routerLinkActive="active" class="list-group-item clearfix">
+	<div class="pull-left">
+		<h4 style="color: white;" class="list-group-item-heading">{{ comic.title }}</h4>
+		<p class="list-group-item-next">{{ comic.synopsis }}</p>
+	</div>
+	<div>
+		<input type="hidden" value="{{ comic }}">
+		<button (click)="onAddComicToCart()" type="submit" class="btn btn-success"> ADD TO CART </button>
+	</div>
+</a>

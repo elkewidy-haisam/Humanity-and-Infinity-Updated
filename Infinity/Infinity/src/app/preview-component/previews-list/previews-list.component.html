@@ -1,0 +1,8 @@
+<div class="row">
+		<div class="col-xs-12">
+			<app-previews-details
+			*ngFor="let Preview of previews"
+			[preview]="Preview"
+			(previewSelected)="onPreviewSelected(Preview)"></app-previews-details>
+		</div>
+</div>

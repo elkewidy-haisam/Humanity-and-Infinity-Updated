@@ -1,0 +1,12 @@
+<a href="#" class="list-group-item clearfix">
+	<div class="pull-left" (click)="onSelected()">
+		<h4 class="list-group-item-heading">{{ comic.title }}</h4>
+		<!--  <p class="list-group-item-next">{{ comic.synopsis }}</p> -->
+	</div>
+	<span class="pull-right">
+		<img [src]="comic.imagePath" alt="{{ comic.title }}" class="img-responsive" style="max-height: 50px;">
+	</span>
+	<button type="submit" class="btn btn-success">Download</button>
+		
+		
+</a>

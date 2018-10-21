@@ -1,0 +1,12 @@
+<div class="row">
+	<div class="col-xs-12">
+		<app-cart-items
+		 *ngFor="let Comic of cart.comics" 
+		 [comic]="Comic"></app-cart-items>
+	</div>
+	<div class="checkout">
+		<form>
+			<button type="submit" (click) = "openCheckout()" class="btn btn-success"> Proceed to Checkout </button>
+		</form>
+	</div>
+</div>
